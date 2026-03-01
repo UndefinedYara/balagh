@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Balagh Brand Palette */
+    --background: 138 100% 93%; /* Light Mist #D9FFE5 */
+    --foreground: 160 14% 14%; /* Charcoal Pine #1F2826 */
+
+    --card: 138 60% 97%;
+    --card-foreground: 160 14% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 14% 14%;
+
+    --primary: 163 89% 18%; /* Deep Teal #075444 */
+    --primary-foreground: 138 100% 93%;
+
+    --secondary: 163 73% 30%; /* Emerald Harbor #138468 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 138 40% 90%;
+    --muted-foreground: 160 14% 35%;
+
+    --accent: 135 40% 61%; /* Fresh Mint #73C68A */
+    --accent-foreground: 160 14% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 138 30% 85%;
+    --input: 138 30% 85%;
+    --ring: 163 89% 18%;
+
+    --radius: 0.75rem;
+
+    /* Balagh custom tokens */
+    --teal-deep: 163 89% 18%;
+    --teal-emerald: 163 73% 30%;
+    --mint-fresh: 135 40% 61%;
+    --mist-light: 138 100% 93%;
+    --pine-charcoal: 160 14% 14%;
+    --gradient-spiritual: linear-gradient(
+      135deg,
+      hsl(163 89% 18%),
+      hsl(163 73% 30%),
+      hsl(135 40% 61%)
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(138 60% 97%),
+      hsl(138 100% 93%)
+    );
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(163 89% 18%) 0%,
+      hsl(163 73% 30%) 50%,
+      hsl(135 40% 61%) 100%
+    );
+    --shadow-soft: 0 4px 24px -4px hsl(163 89% 18% / 0.12);
+    --shadow-card: 0 2px 12px -2px hsl(163 89% 18% / 0.08);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 163 89% 18%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 138 40% 90%;
+    --sidebar-accent-foreground: 160 14% 14%;
+    --sidebar-border: 138 30% 85%;
+    --sidebar-ring: 163 89% 18%;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --background: 160 14% 8%;
+    --foreground: 138 100% 93%;
+
+    --card: 160 14% 12%;
+    --card-foreground: 138 100% 93%;
+
+    --popover: 160 14% 10%;
+    --popover-foreground: 138 100% 93%;
+
+    --primary: 135 40% 61%;
+    --primary-foreground: 160 14% 14%;
+
+    --secondary: 163 73% 30%;
+    --secondary-foreground: 138 100% 93%;
+
+    --muted: 160 14% 18%;
+    --muted-foreground: 138 40% 65%;
+
+    --accent: 163 73% 30%;
+    --accent-foreground: 138 100% 93%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 14% 20%;
+    --input: 160 14% 20%;
+    --ring: 135 40% 61%;
+
+    --sidebar-background: 160 14% 10%;
+    --sidebar-foreground: 138 100% 93%;
+    --sidebar-primary: 135 40% 61%;
+    --sidebar-primary-foreground: 160 14% 14%;
+    --sidebar-accent: 160 14% 18%;
+    --sidebar-accent-foreground: 138 100% 93%;
+    --sidebar-border: 160 14% 20%;
+    --sidebar-ring: 135 40% 61%;
+
+    /* Dark mode overrides for custom tokens */
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(160 14% 12%),
+      hsl(160 14% 16%)
+    );
+    --shadow-soft: 0 4px 24px -4px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 2px 12px -2px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Playfair Display", serif;
+  }
+  .font-arabic {
+    font-family: "Amiri", serif;
+  }
+  .gradient-spiritual {
+    background: var(--gradient-spiritual);
+  }
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+}

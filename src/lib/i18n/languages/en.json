@@ -1,0 +1,73 @@
+{
+  "page_title": {
+    "home": "Home",
+    "quran": "Quran",
+    "athkar": "Athkar",
+    "duaa": "Duaa",
+    "bleegh": "Bleegh",
+    "knowledge": "Knowledge",
+    "children": "Children"
+  },
+  "routes": {
+    "home": "Home",
+    "quran": "Mushaf",
+    "hadeeth": "Hadeeth",
+    "knowledge": "Knowledge",
+
+    "children": "Children",
+    "bleegh": "Bleegh",
+    "services": "Services"
+  },
+
+  "quick_action": {
+    "duaa": "Duaa",
+    "msbha": "Msbha",
+    "athkar": "Athkar",
+    "qibla": "Qibla"
+  },
+  "greeting": {
+    "morning": "Good Morning ☀️",
+    "afternoon": "Good Afternoon 🕛",
+    "evening": "Good Evening 🌙",
+    "peace": "Peace be upon you"
+  },
+  "special_greeting": {
+    "ramadan": "Ramadan Mubarak! 🌙",
+    "eid": "Eid Mubarak! 🎉"
+  },
+  "cta": {
+    "read_quran": "Read Juz Today",
+    "discover_athkar": "Recite Morning and Evening Athkar",
+    "learn_duaa": "Learn Duaa",
+    "read_bleegh": "Read Bleegh",
+    "gain_knowledge": "Gain Knowledge",
+    "for_children": "For Children"
+  },
+  "prayers": {
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha"
+  },
+  "headers": {
+    "home": {
+      "prayer_times": "Prayer Times",
+      "daily_apps": "Daily Apps"
+    }
+  },
+  "content": {
+    "home": {
+      "prayer": "prayer",
+      "in": "in",
+      "minutes": "minute/s",
+      "daily_verse": "Today's Verse",
+      "daily_hadith": "Today's Hadith",
+      "daily_reflection": "Today's Reflection",
+      "daily_reflection_prompt": "What act of kindness can you do today that no one will ever know about?"
+    }
+  },
+  "welcome": "Welcome to Balagh",
+
+  "basmala": "In the name of Allah, the Most Gracious, the Most Merciful"
+}

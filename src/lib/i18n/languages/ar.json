@@ -1,0 +1,73 @@
+{
+  "page_title": {
+    "home": "الرئيسية",
+    "quran": "  القرآن",
+    "athkar": "الأذكار",
+    "duaa": "الدعاء",
+    "bleegh": "بليغ",
+    "knowledge": "المعرفة",
+    "children": "الأطفال"
+  },
+  "routes": {
+    "home": "الرئيسية",
+    "quran": "المصحف",
+    "hadeeth": "الحديث",
+    "knowledge": "المعرفة",
+
+    "children": "الأطفال",
+    "athkar": "الأذكار",
+    "bleegh": "بليغ",
+    "services": "الخدمات"
+  },
+
+  "quick_action": {
+    "duaa": "الدعاء",
+    "msbha": "المسبحة",
+    "athkar": "الأذكار",
+    "qibla": "القبلة"
+  },
+  "greeting": {
+    "morning": "☀️ صباح الخير ",
+    "afternoon": " 🕛 مساء الخير",
+    "evening": "🌙 مساء الخير",
+    "peace": "السلام عليكم"
+  },
+  "special_greeting": {
+    "ramadan": "رمضان كريم! 🌙",
+    "eid": "عيد مبارك! 🎉"
+  },
+  "cta": {
+    "read_quran": "اقرأ جزء اليوم",
+    "discover_athkar": "اكتشف الأذكار",
+    "learn_duaa": "تعلم الدعاء",
+    "read_bleegh": "استخدم بليغ",
+    "gain_knowledge": "اكتسب المعرفة",
+    "for_children": "لأطفال"
+  },
+  "prayers": {
+    "fajr": "الفجر",
+    "dhuhr": "الظهر",
+    "asr": "العصر",
+    "maghrib": "المغرب",
+    "isha": "العشاء"
+  },
+  "headers": {
+    "home": {
+      "prayer_times": "أوقات الصلاة",
+      "daily_apps": "تطبيقاتك اليومية"
+    }
+  },
+  "content": {
+    "home": {
+      "prayer": "صلاة",
+      "in": "بعد",
+      "minutes": "دقيقة/دقائق",
+      "daily_verse": "آية اليوم",
+      "daily_hadith": "حديث اليوم",
+      "daily_reflection": "تأملات اليوم",
+      "daily_reflection_prompt": "ما هو العمل الصالح الذي يمكنك القيام به اليوم دون أن يعلم به أحد؟"
+    }
+  },
+  "welcome": "مرحباً بك في بلاغ",
+  "basmala": "بسم الله الرحمن الرحيم"
+}
