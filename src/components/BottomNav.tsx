@@ -22,9 +22,6 @@ const BottomNav = () => {
     { path: "/quran", label: t("routes.quran"), icon: BookOpen },
     { path: "/hadeeth", label: t("routes.hadeeth"), icon: GraduationCap },
     { path: "/knowledge", label: t("routes.knowledge"), icon: GraduationCap },
-    { path: "/children", label: t("routes.children"), icon: Gift },
-    { path: "/baligh", label: t("routes.bleegh"), icon: Bot },
-    { path: "/services", label: t("routes.services"), icon: MonitorStopIcon },
   ];
 
   return (

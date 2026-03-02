@@ -1,22 +1,55 @@
-import { BookOpen, Flame, Moon, Star, Bookmark, Settings } from "lucide-react";
-
-const stats = [
-  { label: "Reading Streak", value: "7 days", icon: Flame },
-  { label: "Pages Read", value: "142", icon: BookOpen },
-  { label: "Athkar Today", value: "3/5", icon: Moon },
-  { label: "Saved Items", value: "24", icon: Bookmark },
-];
+import {
+  BookOpen,
+  Flame,
+  Moon,
+  Bookmark,
+  Settings,
+  Gift,
+  CreditCard,
+} from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const MySpace = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    {
+      label: t("content.profile.stats.reading_streak"),
+      value: "7 days",
+      icon: Flame,
+    },
+    {
+      label: t("content.profile.stats.pages_read"),
+      value: "142",
+      icon: BookOpen,
+    },
+    {
+      label: t("content.profile.stats.athkar_today"),
+      value: "3/5",
+      icon: Moon,
+    },
+    {
+      label: t("content.profile.stats.saved_items"),
+      value: "24",
+      icon: Bookmark,
+    },
+  ];
+
+  const services = [
+    { label: t("content.profile.services.send_gift"), icon: Gift },
+    { label: t("content.profile.services.gift_card"), icon: CreditCard },
+    { label: t("content.profile.services.quran_card"), icon: BookOpen },
+  ];
+
   return (
     <div className="min-h-screen bg-background px-5 pb-24 pt-12">
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="font-display text-2xl font-bold text-foreground">
-            My Space
+            {t("content.profile.title")}
           </h1>
           <p className="text-sm text-muted-foreground">
-            Your spiritual journey
+            {t("content.profile.subtitle")}
           </p>
         </div>
         <button className="rounded-full bg-card p-2 text-muted-foreground shadow-card">
@@ -36,13 +69,34 @@ const MySpace = () => {
         ))}
       </div>
 
+      <div className="mb-6">
+        <h2 className="font-display text-lg font-bold text-foreground mb-3">
+          {t("content.profile.services.title")}
+        </h2>
+        <div className="grid grid-cols-3 gap-3">
+          {services.map((s) => (
+            <button
+              key={s.label}
+              className="flex flex-col items-center justify-center rounded-xl bg-card p-3 shadow-card transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <div className="mb-2 rounded-full bg-primary/10 p-2.5 text-primary">
+                <s.icon className="h-5 w-5" />
+              </div>
+              <span className="text-xs font-medium text-foreground text-center leading-tight">
+                {s.label}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="rounded-xl bg-card p-5 shadow-card mb-4">
         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-          Khatmah Progress
+          {t("content.profile.khatmah_progress")}
         </p>
         <div className="mb-2 flex items-center justify-between">
           <span className="text-sm font-medium text-foreground">
-            Juz 5 of 30
+            {t("content.profile.juz_progress")}
           </span>
           <span className="text-sm font-semibold text-secondary">17%</span>
         </div>
@@ -56,11 +110,10 @@ const MySpace = () => {
 
       <div className="rounded-xl bg-card p-5 shadow-card">
         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
-          Weekly Insight
+          {t("content.profile.weekly_insight")}
         </p>
         <p className="font-display text-sm italic text-foreground leading-relaxed">
-          You've been consistent with your morning azkar this week. Keep it up —
-          small deeds done consistently are the most beloved to Allah.
+          {t("content.profile.insight_text")}
         </p>
       </div>
     </div>

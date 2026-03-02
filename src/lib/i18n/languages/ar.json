@@ -65,7 +65,34 @@
       "daily_verse": "آية اليوم",
       "daily_hadith": "حديث اليوم",
       "daily_reflection": "تأملات اليوم",
-      "daily_reflection_prompt": "ما هو العمل الصالح الذي يمكنك القيام به اليوم دون أن يعلم به أحد؟"
+      "daily_reflection_prompt": "ما هو العمل الصالح الذي يمكنك القيام به اليوم دون أن يعلم به أحد؟",
+      "children_section": {
+        "title": "ما لا يسع أطفالنا جهله",
+        "aqidah": "قسم العقيدة",
+        "fiqh": "قسم الفقه",
+        "seerah": "قسم السيرة",
+        "hadith": "قسم الحديث"
+      }
+    },
+    "profile": {
+      "title": "مساحتي",
+      "subtitle": "رحلتك الروحية",
+      "stats": {
+        "reading_streak": "تتابع القراءة",
+        "pages_read": "صفحات مقروءة",
+        "athkar_today": "أذكار اليوم",
+        "saved_items": "العناصر المحفوظة"
+      },
+      "services": {
+        "title": "الخدمات",
+        "send_gift": "أرسل هدية",
+        "gift_card": "بطاقة هدية",
+        "quran_card": "بطاقة قرآن"
+      },
+      "khatmah_progress": "تقدم الختمة",
+      "juz_progress": "الجزء 5 من 30",
+      "weekly_insight": "إضاءة أسبوعية",
+      "insight_text": "لقد كنت منتظمًا في أذكار الصباح هذا الأسبوع. استمر في ذلك — أحب الأعمال إلى الله أدومها وإن قل."
     }
   },
   "welcome": "مرحباً بك في بلاغ",

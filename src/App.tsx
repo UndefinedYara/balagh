@@ -16,7 +16,7 @@ import { Children } from "./pages/Children";
 import { useState } from "react";
 import { SplashScreen } from "@/components/SplashScreen";
 import Profile from "./pages/Profile";
-import { Hash } from "lucide-react";
+import { FloatingActionButton } from "@/components/FloatingActionButton";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +45,7 @@ const App = () => {
                     <Route path="/profile" element={<Profile />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
+                  <FloatingActionButton />
                   <BottomNav />
                 </HashRouter>
               </AuthProvider>

@@ -11,10 +11,34 @@ import { CurrentDateCard } from "@/components/CurrentDateCard";
 import { getGreetingKey, getSpecialGreetingKey } from "@/helpers/getGreeting";
 import { usePrayerTimes } from "@/hooks/use-prayer-times";
 import { ProfileButton } from "@/components/ProfileButton";
+import { Heart, Book, Footprints, MessageCircle } from "lucide-react";
 
 const Index = () => {
   const { t } = useTranslation();
   const { nextPrayer, timeRemaining } = usePrayerTimes();
+
+  const childrenCards = [
+    {
+      title: t("content.home.children_section.aqidah"),
+      icon: Heart,
+      color: "border-pink-200 bg-pink-50 text-pink-600",
+    },
+    {
+      title: t("content.home.children_section.fiqh"),
+      icon: Book,
+      color: "border-sky-200 bg-sky-50 text-sky-600",
+    },
+    {
+      title: t("content.home.children_section.seerah"),
+      icon: Footprints,
+      color: "border-emerald-200 bg-emerald-50 text-emerald-600",
+    },
+    {
+      title: t("content.home.children_section.hadith"),
+      icon: MessageCircle,
+      color: "border-amber-200 bg-amber-50 text-amber-600",
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background pb-20">
@@ -86,6 +110,24 @@ const Index = () => {
           <p className="font-display text-sm italic text-foreground leading-relaxed">
             "{t("content.home.daily_reflection_prompt")}"
           </p>
+        </div>
+        <div>
+          <h1 className="font-display text-2xl font-bold text-primary mb-3">
+            {t("content.home.children_section.title")}
+          </h1>
+          <div className="grid grid-cols-2 gap-3">
+            {childrenCards.map((card, index) => (
+              <button
+                key={index}
+                className={`flex flex-col items-center justify-center rounded-2xl border-2 p-4 shadow-sm transition-transform hover:scale-105 active:scale-95 ${card.color}`}
+              >
+                <card.icon className="h-8 w-8 mb-2" />
+                <span className="font-display font-bold text-sm text-center">
+                  {card.title}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>

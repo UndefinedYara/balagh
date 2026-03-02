@@ -64,7 +64,34 @@
       "daily_verse": "Today's Verse",
       "daily_hadith": "Today's Hadith",
       "daily_reflection": "Today's Reflection",
-      "daily_reflection_prompt": "What act of kindness can you do today that no one will ever know about?"
+      "daily_reflection_prompt": "What act of kindness can you do today that no one will ever know about?",
+      "children_section": {
+        "title": "Essential Knowledge for Kids",
+        "aqidah": "Aqidah",
+        "fiqh": "Fiqh",
+        "seerah": "Seerah",
+        "hadith": "Hadith"
+      }
+    },
+    "profile": {
+      "title": "My Space",
+      "subtitle": "Your spiritual journey",
+      "stats": {
+        "reading_streak": "Reading Streak",
+        "pages_read": "Pages Read",
+        "athkar_today": "Athkar Today",
+        "saved_items": "Saved Items"
+      },
+      "services": {
+        "title": "Services",
+        "send_gift": "Send a Gift",
+        "gift_card": "Gift Card",
+        "quran_card": "Quran Card"
+      },
+      "khatmah_progress": "Khatmah Progress",
+      "juz_progress": "Juz 5 of 30",
+      "weekly_insight": "Weekly Insight",
+      "insight_text": "You've been consistent with your morning azkar this week. Keep it up — small deeds done consistently are the most beloved to Allah."
     }
   },
   "welcome": "Welcome to Balagh",
